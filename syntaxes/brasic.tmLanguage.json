@@ -37,7 +37,7 @@
     },
     {
       "name": "keyword.control.brasic",
-      "match": "\\b(VAR|SI|ENTONCES|SINOS|SINO|FIN|MIENTRAS|PARA|HASTA|PASO|SALIR|CONTINUAR|FUN|DEVOLVER)\\b"
+      "match": "\\b(VAR|SI|ENTONCES|SINOS|SINO|FIN|MIENTRAS|PARA|HASTA|PASO|SALIR|CONTINUAR|FUNCION|DEVOLVER)\\b"
     },
     {
       "name": "keyword.operator.logical.brasic",

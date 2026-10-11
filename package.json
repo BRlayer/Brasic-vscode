@@ -2,7 +2,7 @@
   "name": "brasic-language-highlighting",
   "displayName": "Brasic Language Highlighter",
   "description": "Resaltado de sintaxis para el lenguaje de programación Brasic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "BRCreator",
   "license": "MIT",
   "repository": {
