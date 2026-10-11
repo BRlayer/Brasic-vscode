@@ -34,7 +34,7 @@ La extensión reconoce y resalta los siguientes elementos:
 |---|---|
 | Variables y palabras clave | `VAR`, `SI`, `SINO`, `FIN` |
 | Bucles | `MIENTRAS`, `PARA`, `HASTA`, `PASO` |
-| Funciones | `FUN`, `DEVOLVER` |
+| Funciones | `FUNCION`, `DEVOLVER` |
 | Operadores lógicos | `Y`, `O`, `NO` |
 | Constantes | `VERDADERO`, `FALSO`, `NULL`, `MATH_PI` |
 | Funciones integradas | `IMPRIMIR`, `ENTRADA`, `LARGO`, `AÑADIR` |
