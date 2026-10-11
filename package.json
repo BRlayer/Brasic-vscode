@@ -1,15 +1,26 @@
-
 {
-  "name": "brasic-language",
-  "displayName": "Brasic Language Support",
-  "description": "Resaltado de sintaxis para el lenguaje Brasic",
-  "version": "0.1.0",
+  "name": "brasic-syntax-highlighting",
+  "displayName": "Brasic Syntax Highlighting",
+  "description": "Resaltado de sintaxis para el lenguaje de programación Brasic",
+  "version": "1.0",
   "publisher": "br-creator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BRlayer/Brasic-vscode"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "brasic",
+    "spanish",
+    "language",
+    "syntax-highlighting",
+    "education"
   ],
   "contributes": {
     "configurationDefaults": {
@@ -71,8 +82,13 @@
     "languages": [
       {
         "id": "brasic",
-        "aliases": ["Brasic", "brasic"],
-        "extensions": [".bras"],
+        "aliases": [
+          "Brasic",
+          "brasic"
+        ],
+        "extensions": [
+          ".bras"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
