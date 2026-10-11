@@ -49,4 +49,4 @@ La extensión reconoce y resalta los siguientes elementos:
 2. Abre Visual Studio Code.
 3. Accede a la sección **Extensiones**.
 4. Abre el menú de los tres puntos (`...`).
-5. Selecciona **Instalar desde VSIX...
+5. Selecciona **Instalar desde VSIX...**
