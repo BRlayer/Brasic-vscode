@@ -1,0 +1,3 @@
+IMPRIMIR("Hola desde Brasic")
+VAR nombre = ENTRADA()
+IMPRIMIR("Hola, " + nombre)

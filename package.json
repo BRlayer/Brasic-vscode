@@ -2,8 +2,9 @@
   "name": "brasic-language-highlighting",
   "displayName": "Brasic Language Highlighter",
   "description": "Resaltado de sintaxis para el lenguaje de programación Brasic",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "publisher": "BRCreator",
+  "main": "./extension.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -98,6 +99,21 @@
         "scopeName": "source.brasic",
         "path": "./syntaxes/brasic.tmLanguage.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "brasic.runFile",
+        "title": "Brasic: Ejecutar archivo"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "brasic.runFile",
+          "when": "editorLangId == brasic",
+          "group": "navigation"
+        }
+      ]
+    }
   }
 }
