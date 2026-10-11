@@ -1,0 +1,75 @@
+
+{
+  "scopeName": "source.brasic",
+  "patterns": [
+    {
+      "name": "comment.line.number-sign.brasic",
+      "match": "#.*$"
+    },
+    {
+      "name": "string.quoted.double.brasic",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "meta.function.definition.brasic",
+      "begin": "\\bFUN\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control.brasic"
+        },
+        "1": {
+          "name": "entity.name.function.brasic"
+        }
+      },
+      "end": "\\)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.bracket.brasic"
+        }
+      },
+      "patterns": [
+        {
+          "name": "variable.parameter.brasic",
+          "match": "[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.brasic",
+      "match": "\\b(VAR|SI|ENTONCES|SINOS|SINO|FIN|MIENTRAS|PARA|HASTA|PASO|SALIR|CONTINUAR|FUN|DEVOLVER)\\b"
+    },
+    {
+      "name": "keyword.operator.logical.brasic",
+      "match": "\\b(Y|O|NO)\\b"
+    },
+    {
+      "name": "constant.language.brasic",
+      "match": "\\b(VERDADERO|FALSO|NULL|MATH_PI)\\b"
+    },
+    {
+      "name": "support.function.builtin.brasic",
+      "match": "\\b(IMPRIMIR_RET|IMPRIMIR|ENTRADA_INT|ENTRADA|LIMPIAR|CLS|ES_NUMERO|ES_TEXTO|ES_LISTA|ES_FUN|AÑADIR|SACAR|EXTENDER|LARGO|EJECUTAR)\\b"
+    },
+    {
+      "name": "entity.name.function.brasic",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\s*\\()"
+    },
+    {
+      "name": "constant.numeric.brasic",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "name": "keyword.operator.brasic",
+      "match": "==|!=|<=|>=|[+*/^=<>-]"
+    },
+    {
+      "name": "punctuation.bracket.brasic",
+      "match": "[()\\[\\]]"
+    },
+    {
+      "name": "punctuation.separator.brasic",
+      "match": "[,;]"
+    }
+  ]
+}

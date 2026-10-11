@@ -1,0 +1,87 @@
+
+{
+  "name": "brasic-language",
+  "displayName": "Brasic Language Support",
+  "description": "Resaltado de sintaxis para el lenguaje Brasic",
+  "version": "0.1.0",
+  "publisher": "br-creator",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "keyword.control.brasic",
+            "settings": {
+              "foreground": "#FF5555",
+              "fontStyle": "bold"
+            }
+          },
+          {
+            "scope": "keyword.operator.logical.brasic",
+            "settings": {
+              "foreground": "#FF79C6"
+            }
+          },
+          {
+            "scope": "support.function.builtin.brasic",
+            "settings": {
+              "foreground": "#8BE9FD"
+            }
+          },
+          {
+            "scope": "constant.language.brasic",
+            "settings": {
+              "foreground": "#BD93F9"
+            }
+          },
+          {
+            "scope": "constant.numeric",
+            "settings": {
+              "foreground": "#BD93F9"
+            }
+          },
+          {
+            "scope": "string.quoted.double.brasic",
+            "settings": {
+              "foreground": "#F1FA8C"
+            }
+          },
+          {
+            "scope": "comment.line.number-sign.brasic",
+            "settings": {
+              "foreground": "#6272A4",
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "scope": "keyword.operator",
+            "settings": {
+              "foreground": "#FFB86C"
+            }
+          }
+        ]
+      }
+    },
+    "languages": [
+      {
+        "id": "brasic",
+        "aliases": ["Brasic", "brasic"],
+        "extensions": [".bras"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "brasic",
+        "scopeName": "source.brasic",
+        "path": "./syntaxes/brasic.tmLanguage.json"
+      }
+    ]
+  }
+}
