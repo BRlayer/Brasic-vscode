@@ -2,6 +2,9 @@
 
 Extensión de Visual Studio Code para **Brasic**, un lenguaje de programación educativo diseñado para facilitar el aprendizaje de la programación a personas que hablan español.
 
+REPO DEL CODIGO: https://github.com/BRlayer/Brasic/
+> La extension siempre tendrá la versión más nueva de `Brasic`
+
 ## Características
 
 - **Resaltado de sintaxis** para palabras clave, operadores, números, cadenas de texto, comentarios y constantes.
